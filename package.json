@@ -5,7 +5,13 @@
   "workspaces": [
     "packages/*"
   ],
-  "publisher":"rj",
+  "publisher": "rj",
+  "engines": {
+    "vscode": "^1.32.0"
+  },
+  "categories": [ 
+    "Snippets"
+  ],
   "scripts": {
     "setup": "npm run setup:packages && npm run setup:extensions",
     "setup:packages": "npm run packages:install && lerna clean --yes && npm run packages:link && npm run packages:build",
