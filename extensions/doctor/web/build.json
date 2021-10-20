@@ -1,0 +1,23 @@
+{
+  "mpa": true,
+  "vendor": false,
+  "publicPath": "./",
+  "outputDir": "../build",
+  "devServer": {
+    "writeToDisk": true
+  },
+  "plugins": [
+    [
+      "build-plugin-fusion",
+      {
+        "themePackage": "@alifd/theme-dark-pro"
+      }
+    ],
+    [
+      "build-plugin-moment-locales",
+      {
+        "locales": ["zh-cn"]
+      }
+    ]
+  ]
+}

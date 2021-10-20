@@ -1,0 +1,20 @@
+{
+  "name": "@appworks/config",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "user-home": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "compile": "rm -rf lib && tsc -p ./tsconfig.json",
+    "prepublishOnly": "npm run compile"
+  },
+  "gitHead": "1096f88f2d5a7ee82270d656c5b6c52218d817d1"
+}

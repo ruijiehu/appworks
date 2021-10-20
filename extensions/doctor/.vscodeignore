@@ -1,0 +1,12 @@
+.vscode/**
+.vscode-test/**
+src/**
+web/**
+.gitignore
+**/tsconfig.json
+**/*.map
+**/*.ts
+
+node_modules/@types/**
+node_modules/terser
+node_modules/ts-loader

@@ -1,0 +1,4 @@
+{
+  "extension.iceworksDoctor.doctor.error.illegalDirectory": "The workspace directory does not have package.json, Please open anther javascript project!",
+  "extension.iceworksDoctor.doctor.error.twiceOpen": "You have already open a dashboard, Please close it first!"
+}

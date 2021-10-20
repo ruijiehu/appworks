@@ -1,0 +1,11 @@
+{
+  "package.materialService.index.webTitle": "PC",
+  "package.materialService.index.webDescription": "Based On React and icejs Framework",
+  "package.materialService.index.raxTitle": "Mobile Apps",
+  "package.materialService.index.raxDescription": "Based On Rax Components and Rax App",
+  "package.materialService.index.vueTitle": "Vue",
+  "package.materialService.index.vueDescription": "Based On Vue, Element and Vue CLI ",
+  "package.materialService.index.materialSourceExistError": "Material source already exists, please try again.",
+  "package.materialService.index.materialNameExistError": "Material name s already exists, please try again.",
+  "package.materialService.index.materialDataError": "Incorrect material source, please try again."
+}

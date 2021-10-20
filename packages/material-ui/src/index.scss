@@ -1,0 +1,15 @@
+.appworks-material {
+  height: 100%;
+  width: 100%;
+  .next-loading-wrap {
+    height: 100%;
+  }
+  .extra-wrap {
+    .next-icon {
+      cursor: pointer;
+      &::before {
+        font-size: 14px;
+      }
+    }
+  }
+}

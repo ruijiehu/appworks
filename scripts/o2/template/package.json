@@ -1,0 +1,59 @@
+{
+  "name": "icework-kit",
+  "publisher": "O2",
+  "engines": {
+    "kaitian": "^1.20.0"
+  },
+  "contributes": {
+    "configuration": {
+      "title": "AppWorks"
+    }
+  },
+  "dependencies": {
+    "@ali/kit-runner": "^0.1.0"
+  },
+  "devDependencies": {
+    "@ali/kaitian": "latest",
+    "vscode": "^1.1.28",
+    "lodash.isfunction": "^3.0.9"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run compile",
+    "compile": "NODE_ENV=development kit-builder compile"
+  },
+  "kaitianContributes": {
+    "nodeMain": "./out/node/index.js",
+    "browserMain": "./out/browser/index.js",
+    "includes": [
+      "iceworks-team.iceworks-time-master"
+    ],
+    "toolbar": {
+      "actions": [
+        {
+          "type": "button",
+          "title": "%applicationManager.kaitianContributes.toolbar.runDebug.title%",
+          "iconPath": "./assets/dark/run.svg",
+          "id": "applicationManager.scripts.runDebug",
+          "command": "applicationManager.scripts.runDebug"
+        },
+        {
+          "type": "button",
+          "title": "%applicationManager.kaitianContributes.toolbar.reinstall.title%",
+          "iconPath": "./assets/dark/install.svg",
+          "id": "applicationManager.nodeDependencies.reinstall",
+          "command": "applicationManager.nodeDependencies.reinstall"
+        },
+        {
+          "type": "button",
+          "title": "%applicationManager.kaitianContributes.toolbar.DefPublish.title%",
+          "iconPath": "./assets/dark/upload.svg",
+          "id": "applicationManager.scripts.DefPublish",
+          "command": "applicationManager.scripts.DefPublish"
+        }
+      ]
+    }
+  },
+  "extensionDependencies": [
+    "tao.def-basic-kit"
+  ]
+}
