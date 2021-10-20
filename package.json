@@ -5,6 +5,7 @@
   "workspaces": [
     "packages/*"
   ],
+  "publisher":"rj",
   "scripts": {
     "setup": "npm run setup:packages && npm run setup:extensions",
     "setup:packages": "npm run packages:install && lerna clean --yes && npm run packages:link && npm run packages:build",
